@@ -121,12 +121,12 @@ print(x[:3])
 Umumnya, tuple digunakan untuk data yang bersifat sekali deklarasi dan dapat dieksekusi lebih cepat. 
 Tuple didefinisikan dengan kurung “()“ dan setiap elemen di dalamnya dipisahkan dengan koma.'''
 
-x = (1, "Dicoding", 1+3j)
+x = (1, "Alvin", 1+3j)
 print(type(x))
 
 '''Tuple bersifat immutable yang artinya tidak dapat diubah.'''
 # x = (5, 'program', 1+3j)
-# x[1] = 'Dicoding'
+# x[1] = 'Alvin'
 
 ## Set
 '''Set adalah kumpulan item bersifat unik, tanpa urutan (unordered collection), dan dapat diinisialisasikan dengan kurawal “{}” 
@@ -189,7 +189,7 @@ print(d)
 
 # 3. Mengubah Data pada Dictionary
 d = { 'name': 'Perseus Evans', 'age': 20, 'isMarried': False }
-d ['name'] = "Dicoding"
+d ['name'] = "Alvin"
 
 print(d)
 
@@ -223,3 +223,55 @@ print(dict([[1,2],[3,4]]))
 
 '''Konversi list dari beberapa tuple yang isinya pasangan nilai menjadi dictionary.'''
 print(dict([(3,26),(4,44)]))
+
+
+"""
+TODO:
+Buatlah variabel firstName, lastName, age, isMarried dengan ketentuan:
+- firstName: isi dengan nama depan Anda bertipe data string.
+- lastName: isi dengan nama belakang Anda bertipe data string.
+- age: isi dengan umur Anda bertipe data integer.
+- isMarried: isi dengan status pernikahan Anda bertipe data boolean.
+
+Catatan:
+- Value variabel harus berupa nilai sesungguhnya (literal) seperti string, 
+  bilangan bulat (integer), dan boolean (benar atau salah).
+"""
+# TODO: Silakan buat kode Anda di bawah ini.
+firstName = "Alvin"
+lastName = "Saputra"
+age = 19
+isMarried = False
+
+print(type(firstName))
+print(type(lastName))
+print(type(age))
+print(type(isMarried))
+
+"""
+TODO:
+Buatlah variabel dictionary dengan nama "data_diri",
+variabel tersebut berisi identitas diri Anda berdasarkan ketentuan berikut.
+- Memiliki key bernama "firstName":
+    - Isi value dengan nama depan Anda, pastikan bertipe data string.
+- Memiliki key bernama "lastName":
+    - Isi value dengan nama terakhir Anda, pastikan bertipe data string.
+- Memiliki key bernama "age":
+    - Isi value dengan umur Anda, pastikan bertipe data integer.
+- Memiliki key bernama "isMarried":
+    - Isi value dengan status pernikahan Anda, pastikan bertipe data boolean.
+
+Catatan:
+- Value pada dictionary harus berupa nilai sesungguhnya (literal) seperti string, 
+  bilangan bulat (integer), dan boolean (benar atau salah).
+"""
+
+# TODO: Silakan buat kode Anda di bawah ini.
+data_diri = {
+  "firstName": "Alvin",
+  "lastName": "Saputra",
+  "age": 19,
+  "isMarried": False
+}
+
+print(data_diri ["age"])
